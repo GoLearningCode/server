@@ -6,12 +6,12 @@ import (
 
 // Defining the Server type
 type Server struct {
-	address string
+	Address string
 }
 
 // Serve function to initialize the server
 func (s Server) Serve(handler http.Handler) {
-	http.ListenAndServe(s.address, handler)
+	http.ListenAndServe(s.Address, handler)
 }
 
 // http methods handler functions
